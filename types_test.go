@@ -2,15 +2,7 @@ package arrays
 
 import (
 	. "launchpad.net/gocheck"
-	"testing"
 )
-
-// Hook up gocheck into the "go test" runner.
-func Test(t *testing.T) { TestingT(t) }
-
-type S struct{}
-
-var _ = Suite(&S{})
 
 func (s *S) TestToStringArray(c *C) {
 	obj := []interface{}{"A", "b", "c"}
