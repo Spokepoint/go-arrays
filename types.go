@@ -1,3 +1,4 @@
+// Array types manipulation
 package arrays
 
 import (
@@ -5,6 +6,7 @@ import (
 	"reflect"
 )
 
+// StringArray converts an interface array to a string array
 func StringArray(data []interface{}) (strs []string, err error) {
 	strs = make([]string, 0, len(data))
 	for _, v := range data {
